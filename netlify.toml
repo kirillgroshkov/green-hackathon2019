@@ -1,0 +1,17 @@
+
+[build]
+publish = "www"
+command = "yarn build"
+
+[build.environment]
+YARN_VERSION = "1.15.2"
+YARN_FLAGS = "--ignore-engines"
+
+[context.production]
+[context.production.environment]
+
+[context.deploy-preview]
+[context.deploy-preview.environment]
+
+[context.branch-deploy]
+[context.branch-deploy.environment]
