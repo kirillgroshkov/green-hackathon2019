@@ -1,0 +1,6 @@
+#
+# _redirects for netlify
+#
+
+# SPA
+/* /index.html 200
