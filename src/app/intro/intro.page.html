@@ -1,34 +1,33 @@
-<ion-content fullscreen padding scroll-y="false">
-  <ion-slides pager="true">
+<ion-content fullscreen padding1 scroll-y="false">
+  <ion-slides pager="true" #slides>
     <ion-slide>
-      <img src="/assets/slide-1.png"/>
-      <h2>Welcome to the <b>ICA</b></h2>
-      <p>The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code use.</p>
+      <img src="/assets/slide1.jpg"/>
+      <h2>Chose your goal</h2>
+      <p>Start improving in your favourite category: food, energy, stuff, water.</p>
     </ion-slide>
 
     <ion-slide>
-      <img src="/assets/slide-2.png"/>
-      <h2>What is Ionic?</h2>
-      <p><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.</p>
+      <img src="/assets/slide2.jpg"/>
+      <h2>Complete your quests</h2>
+      <p>Do small, simple and clear quests every day to reach the ultimate goal....</p>
     </ion-slide>
 
     <ion-slide>
-      <img src="/assets/slide-3.png"/>
-      <h2>What is Ionic Pro?</h2>
-      <p><b>Ionic Pro</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
-    </ion-slide>
-
-    <ion-slide>
-      <img src="/assets/slide-4.png"/>
-      <h2>Ready to Play?</h2>
-      <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+      <img src="/assets/slide3.jpg"/>
+      <h2>Saving the planet</h2>
+      <ion-button fill="clear" [routerLink]="'/home'">Be a hero <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
     </ion-slide>
 
   </ion-slides>
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar style="text-align: right">
-    <ion-button fill="clear" style="" [routerLink]="'/home'">skip</ion-button>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" style="" [routerLink]="'/home'">skip intro</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" style="" (click)="next()">next</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-footer>

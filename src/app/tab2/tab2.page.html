@@ -1,11 +1,38 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Goals
-    </ion-title>
+    <ion-title>Goals</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  Goals
+<ion-content fullscreen>
+  <ion-card [routerLink]="'/home/tab1'">
+    <ion-img src="/assets/food.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Food</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card [routerLink]="'/home/tab1'">
+    <ion-img src="/assets/energy.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Energy</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card [routerLink]="'/home/tab1'">
+    <ion-img src="/assets/water.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Water</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card [routerLink]="'/home/tab1'">
+    <ion-img src="/assets/stuff.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Stuff</ion-card-title>
+    </ion-card-header>
+  </ion-card>
 </ion-content>

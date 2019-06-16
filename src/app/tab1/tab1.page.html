@@ -1,12 +1,27 @@
-<ion-header>
+<ion-header translucent>
   <ion-toolbar>
-    <ion-title>
-      Home
-    </ion-title>
+    <ion-title>Status</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen padding>
+  <h1>Weekly goal:</h1>
+
+  <p>Replace consumption of meat and dairy</p>
+
+  <p>CO<sub>2</sub> target: <span style="font-family: 'Courier New'; font-weight: bold;">450</span> g</p>
+
+  <ion-card *ngFor="let day of days">
+    <ion-card-content>
+      <p><b>Day {{ day.num }}</b></p>
+      <p>{{ day.txt }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!--
   <ion-card class="welcome-card">
     <ion-img src="/assets/shapes.svg"></ion-img>
     <ion-card-header>
@@ -41,4 +56,5 @@
       <ion-label>Theme Your App</ion-label>
     </ion-item>
   </ion-list>
+  -->
 </ion-content>
