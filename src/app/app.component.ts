@@ -10,14 +10,14 @@ import { Platform } from '@ionic/angular'
 })
 export class AppComponent implements OnInit {
   constructor (
-    // private platform: Platform,
-    // private splashScreen: SplashScreen,
-    // private statusBar: StatusBar,
+    private platform: Platform,
+    private splashScreen: SplashScreen,
+    private statusBar: StatusBar,
   ) {}
 
   async ngOnInit() {
-    // await this.platform.ready()
-    // this.statusBar.styleDefault()
-    // this.splashScreen.hide()
+    await this.platform.ready()
+    this.statusBar.styleDefault()
+    this.splashScreen.hide()
   }
 }
