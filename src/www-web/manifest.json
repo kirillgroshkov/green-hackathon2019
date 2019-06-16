@@ -1,0 +1,9 @@
+{
+  "name": "Sprouts",
+  "short_name": "Sprouts",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fafafa",
+  "theme_color": "#448aff"
+}
