@@ -3,12 +3,14 @@ import { Component } from '@angular/core'
 export interface Day {
   txt: string
   num: number
+  done?: boolean
 }
 
 const days: Day[] = [
   {
     num: 1,
     txt: 'Go to local supermarket and replace 5 products with vegan options.',
+    done: true,
   },
   {
     num: 2,

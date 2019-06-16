@@ -16,7 +16,7 @@
 
   <ion-card *ngFor="let day of days">
     <ion-card-content>
-      <p><b>Day {{ day.num }}</b></p>
+      <p><b><span *ngIf="day.done">✓ </span>Day {{ day.num }}</b></p>
       <p>{{ day.txt }}</p>
     </ion-card-content>
   </ion-card>
